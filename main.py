@@ -38,7 +38,7 @@ def plt_snake(Game_Window,red,py_list,python_size):
 def welcome():
     exit_game = False
     while not exit_game:
-        Game_Window.fill((233,210,229))
+        Game_Window.fill((233,10,29))
         score_on_screen("Welcome to PYTHON ", black, 260, 250)
         score_on_screen("Press Space Bar To Play", black, 232, 290)
         for event in pygame.event.get():
@@ -111,7 +111,7 @@ def maingame():
             python_x+=velocity_x
             python_y+=velocity_y
 
-            if abs(python_x-food_x)<10 and abs(python_y-food_y)<10:
+            if abs(python_x-food_x)<13 and abs(python_y-food_y)<13:
                 score+=1
                 print("Score = ",score*10)
 
